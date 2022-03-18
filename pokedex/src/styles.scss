@@ -1,3 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('./main-styles.scss');
+@import "./configs-scss/main-styles.scss";
+@import "./configs-scss/variables.scss";
+@import "./configs-scss/rem-calc.scss";
 @import "../node_modules/bulma/bulma.sass";
+
+
+main {
+  max-width: rem-calc(600);
+  margin: 0 auto;
+  box-sizing: border-box;
+}

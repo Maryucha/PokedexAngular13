@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "compodoc": "npx compodoc -p tsconfig.doc.json -a screenshots -n \"POkedex Documentation\" --includes additional-doc --theme postmark"
+    "compodoc": "npx compodoc -p tsconfig.doc.json -a screenshots -n \"Pokedex Documentation\" --includes additional-doc --theme postmark"
   },
   "private": true,
   "dependencies": {

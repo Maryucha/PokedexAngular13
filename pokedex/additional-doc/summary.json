@@ -1,0 +1,29 @@
+
+[
+    {
+        "title": "Introduction",
+        "file": "introduction.md"
+    },
+    {
+        "title": "Actions",
+        "file": "actions.md",
+        "children": [
+            {
+                "title": "Creation of a task",
+                "file": "actions/creation.md"
+            },
+            {
+                "title": "Edition of a task",
+                "file": "actions/edition.md"
+            },
+            {
+                "title": "Delete a task",
+                "file": "actions/delete.md"
+            },
+            {
+                "title": "Update the status of a task",
+                "file": "actions/status.md"
+            }
+        ]
+    }
+]
