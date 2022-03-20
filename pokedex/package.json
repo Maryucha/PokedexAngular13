@@ -1,6 +1,10 @@
 {
   "name": "pokedex",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": "Maryucha M. Mariani",
+  "description": "This application is excercise in Angular 13",
+  "license": "MIT",
+  "repository": "https://github.com/Maryucha/PokedexAngular13",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",

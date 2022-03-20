@@ -1,0 +1,66 @@
+@import "../../../configs-scss/rem-calc.scss";
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  
+  .pokemon {
+    position: relative;
+    display: flex;
+    width: calc(49% - rem-calc(20));
+
+    height: rem-calc(157 - 10);
+    padding: rem-calc(20);
+    margin-top: rem-calc(30);
+
+    background: var(--branco);
+    border-radius: rem-calc(10);
+
+    &__status {
+      h2 {
+        font-size: rem-calc(25);
+        font-style: italic;
+        font-weight: bold;
+        color: var(--primary);
+        margin-bottom: rem-calc(10);
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          text-align: center;
+          font-size: rem-calc(15);
+          font-weight: 600;
+          color: var(--primary);
+
+          width: rem-calc(70);
+          background: var(--cinza);
+          border-radius: rem-calc(25);
+          padding: rem-calc(3) rem-calc(3);
+          margin-bottom: rem-calc(10);
+        }
+      }
+    }
+
+    &__img {
+      position: absolute;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: rem-calc(90);
+      width: rem-calc(110);
+
+      right: rem-calc(15);
+      bottom: rem-calc(15);
+      background-image: url("../../../assets/back-poke.svg");
+
+      img {
+        width: rem-calc(80);
+      }
+    }
+  }
+}

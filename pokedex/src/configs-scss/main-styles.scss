@@ -1,15 +1,16 @@
 /*Google Fonts*/
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Lato:400,800,900');
+@import url('https://fonts.googleapis.com/css?family=Nunito:100,400,700|Lato:400,800,900');
 
 /* Change bulma variables */
 $family-sans-serif: "Nunito, sans-serif";
-$input-border-color: transparent;
+$input-border-color: none;
 $input-shadow: none;
 
 /* GLOBAL STYLES */
 html, body { height: 100%; }
 body { margin: 0; }
 
+/* BACKGROUND */
 html {
     background-image: url('../assets/background.svg');
     background-size: cover;

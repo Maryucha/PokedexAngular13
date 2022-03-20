@@ -6,7 +6,9 @@ import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
 
-
+/**
+ * This class represents a Views module
+ */
 @NgModule({
   declarations: [
     HomeComponent,
@@ -20,4 +22,5 @@ import { DetailsComponent } from './details/details.component';
   exports: [
   ]
 })
+
 export class ViewsModule { }

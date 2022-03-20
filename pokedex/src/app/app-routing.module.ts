@@ -16,11 +16,11 @@ const routes: Routes = [
   }
 ];
 
+/**
+ * This class resepents a routing app module and mapping then routes.
+ */
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-/**
- * This class resepents a routing app module and mapping then routes.
- */
 export class AppRoutingModule { }

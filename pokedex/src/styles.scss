@@ -4,9 +4,9 @@
 @import "./configs-scss/rem-calc.scss";
 @import "../node_modules/bulma/bulma.sass";
 
-
 main {
   max-width: rem-calc(600);
   margin: 0 auto;
   box-sizing: border-box;
+  font-family: Nunito, sans-serif
 }

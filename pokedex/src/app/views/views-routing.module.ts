@@ -17,11 +17,11 @@ const routes: Routes = [
   }
 ];
 
+/**
+ * This class resepents a routing views module and mapping then routes.
+ */
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-/**
- * This class resepents a routing views module and mapping then routes.
- */
 export class ViewsRoutingModule { }
