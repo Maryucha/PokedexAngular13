@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 /**
  * asas
@@ -10,6 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
+  
+  @Output() public emmitSearch: EventEmitter<string> = new EventEmitter();
+
   /**
    * asqas
    */
@@ -19,6 +22,14 @@ export class SearchComponent implements OnInit {
    * asaas
    */
   ngOnInit(): void {
+  }
+
+  /**
+   * asas
+   * @param value 
+   */
+  public search(value: string){
+    this.emmitSearch.emit(value);
   }
 
 }

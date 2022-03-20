@@ -1,66 +1,82 @@
 @import "../../../configs-scss/rem-calc.scss";
 
 :host {
-  display: flex;
-  justify-content: space-between;
-  
-  .pokemon {
-    position: relative;
+  width: 100%;
+  .listagem {
     display: flex;
-    width: calc(49% - rem-calc(20));
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
 
-    height: rem-calc(157 - 10);
-    padding: rem-calc(20);
-    margin-top: rem-calc(30);
+    .pokemon {
+      position: relative;
+      display: flex;
+      width: calc(50% - rem-calc(20));
 
-    background: var(--branco);
-    border-radius: rem-calc(10);
+      height: rem-calc(157 - 10);
+      padding: rem-calc(20);
+      margin-top: rem-calc(30);
 
-    &__status {
-      h2 {
-        font-size: rem-calc(25);
-        font-style: italic;
-        font-weight: bold;
-        color: var(--primary);
-        margin-bottom: rem-calc(10);
+      background: var(--branco);
+      border-radius: rem-calc(10);
+
+      &__status {
+        h2 {
+          font-size: rem-calc(25);
+          font-style: italic;
+          font-weight: bold;
+          color: var(--primary);
+          margin-bottom: rem-calc(10);
+          text-transform: capitalize;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+
+          li {
+            text-align: center;
+            font-size: rem-calc(15);
+            font-weight: 600;
+            color: var(--primary);
+
+            width: rem-calc(70);
+            background: var(--cinza);
+            border-radius: rem-calc(25);
+            padding: rem-calc(3) rem-calc(3);
+            margin-bottom: rem-calc(10);
+          }
+        }
       }
 
-      ul {
+      &__img {
+        position: absolute;
+
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-        li {
-          text-align: center;
-          font-size: rem-calc(15);
-          font-weight: 600;
-          color: var(--primary);
+        height: rem-calc(90);
+        width: rem-calc(110);
 
-          width: rem-calc(70);
-          background: var(--cinza);
-          border-radius: rem-calc(25);
-          padding: rem-calc(3) rem-calc(3);
-          margin-bottom: rem-calc(10);
+        right: rem-calc(15);
+        bottom: rem-calc(15);
+        background-image: url("../../../assets/back-poke.svg");
+
+        img {
+          width: rem-calc(65);
+        }
+      }
+      @media (max-width: 400px) {
+        a {
+          width: 100% !important;
         }
       }
     }
+  }
 
-    &__img {
-      position: absolute;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      height: rem-calc(90);
-      width: rem-calc(110);
-
-      right: rem-calc(15);
-      bottom: rem-calc(15);
-      background-image: url("../../../assets/back-poke.svg");
-
-      img {
-        width: rem-calc(80);
-      }
-    }
+  .listagem > * {
+    margin: rem-calc(5);
+    flex: 1 0 27%;
   }
 }

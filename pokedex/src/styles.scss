@@ -2,10 +2,12 @@
 @import "./configs-scss/main-styles.scss";
 @import "./configs-scss/variables.scss";
 @import "./configs-scss/rem-calc.scss";
+@import "./configs-scss/btn.scss";
 @import "../node_modules/bulma/bulma.sass";
+@import "./configs-scss/animation.scss";
 
 main {
-  max-width: rem-calc(600);
+  max-width: rem-calc(900);
   margin: 0 auto;
   box-sizing: border-box;
   font-family: Nunito, sans-serif

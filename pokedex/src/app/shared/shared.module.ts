@@ -6,6 +6,8 @@ import { SearchComponent } from './search/search.component';
 import { ListComponent } from './list/list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { PokemonsService } from './services/pokemons.service';
+import { RouterModule } from '@angular/router';
 
 /**
  * This class represents the shared module.
@@ -16,13 +18,14 @@ import { HttpClientModule } from '@angular/common/http';
     ErrorComponent,
     HeaderComponent,
     SearchComponent,
-    ListComponent
+    ListComponent,
   ],
   imports: [
     CommonModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    RouterModule
   ],
   exports: [
     ErrorComponent,
@@ -31,6 +34,11 @@ import { HttpClientModule } from '@angular/common/http';
     ListComponent,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    RouterModule
+  ],
+  providers: [
+    PokemonsService
   ]
 })
 export class SharedModule { }
