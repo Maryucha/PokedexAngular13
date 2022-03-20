@@ -3,9 +3,9 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 ## Screenshots of the application - (for assets embedding demo)
 
-| Home                           | Details                            |
-| ------------------------------------- | -------------------------------------- |
-| ![Home](./screenshots/home.png) | ![Details](./screenshots/details.png) |
+| Home                           | Details                            | Documentation                            |
+| ------------------------------------- | -------------------------------------- |-------------------------------------- |
+| ![Home](./screenshots/home.png) | ![Details](./screenshots/details.png) |![Documentation](./screenshots/documentation.png) |
 
 It is a demo project for demonstrating my habilities with Angular:
 
