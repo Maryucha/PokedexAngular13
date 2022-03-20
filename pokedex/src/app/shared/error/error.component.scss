@@ -1,0 +1,31 @@
+@import "../../../configs-scss/rem-calc.scss";
+
+div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .error {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+    width: rem-calc(900);
+
+    .title {
+      margin-left: rem-calc(150);
+      color: var(--branco);
+      font-family: Nunito, sans-serif;
+    }
+
+    img {
+      margin-left: rem-calc(80);
+      width: rem-calc(200);
+    }
+  }
+  .msg-erro {
+    color: var(--branco);
+    font-size: rem-calc(100);
+    font-family: Nunito, sans-serif;
+  }
+}

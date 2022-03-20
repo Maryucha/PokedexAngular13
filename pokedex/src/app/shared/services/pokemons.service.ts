@@ -10,7 +10,7 @@ import { map, Observable, tap } from 'rxjs';
 })
 export class PokemonsService {
 
-  private urlApi: string = 'https://pokeapi.co/api/v2/pokemon';
+  private urlApi: string = 'https://pokeapi.co/api/v2/pokemon?offset=0&limit=100';
 
   /**
    * asas

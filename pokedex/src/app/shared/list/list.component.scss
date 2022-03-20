@@ -67,9 +67,9 @@
           width: rem-calc(65);
         }
       }
-      @media (max-width: 400px) {
+      @media (max-width: 900px) {
         a {
-          width: 100% !important;
+          width: 10% !important;
         }
       }
     }
@@ -78,5 +78,17 @@
   .listagem > * {
     margin: rem-calc(5);
     flex: 1 0 27%;
+  }
+
+  .error {
+    display: flex;
+    flex-direction: column;
+    p{
+      color: var(--branco);
+    }
+
+    img {
+
+    }
   }
 }

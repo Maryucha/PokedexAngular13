@@ -14,7 +14,7 @@ export class ListComponent implements OnInit {
   private setAllPokemons: any;
   public getAllPokemons: any;
 
-  public apiError: boolean = false;
+  public apiError: boolean = true;
   /**
    * asas
    */
@@ -25,25 +25,29 @@ export class ListComponent implements OnInit {
   /**
    * asas
    */
-   ngOnInit(){
+  ngOnInit() {
     this.pokemonService.apiList.subscribe(
       res => {
         this.getAllPokemons = res.results;
-        this.setAllPokemons = this.setAllPokemons;
-      },
-      error => {
-        this.apiError = true;
-      }
-      
-    );
-    
+        this.setAllPokemons = this.getAllPokemons;
+      });
+    if (this.getAllPokemons.length > 0) {
+      this.apiError = true;
+    } else {
+      this.apiError = false;
+    }
   }
 
-  public getSearch(value: string){
-    const filter = this.setAllPokemons.filter( (res: any ) => {
+  public getSearch(value: string) {
+    const filter = this.setAllPokemons.filter((res: any) => {
       return !res.name.indexOf(value.toLowerCase());
     });
-
-    this.getAllPokemons = filter;
+    if (filter.length > 0) {
+      this.getAllPokemons = filter;
+      this.apiError = true;
+    } else {
+      this.getAllPokemons = null;
+      this.apiError = false;
+    }
   }
 }
